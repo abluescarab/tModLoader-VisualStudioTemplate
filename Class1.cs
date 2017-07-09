@@ -15,7 +15,7 @@ namespace $safeprojectname$ {
                 Autoload = true,
                 AutoloadGores = true,
                 AutoloadSounds = true
-            }
+            };
         }
     }
 }
