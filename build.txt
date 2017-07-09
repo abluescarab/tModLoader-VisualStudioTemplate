@@ -1,0 +1,12 @@
+﻿displayName=$safeprojectname$
+author=$username$
+version=0.0.1
+dllReferences=
+modReferences=
+noCompile=false
+homepage=
+hideCode=false
+hideResources=false
+includeSource=true
+buildIgnore=*.csproj, *.user, obj\*, bin\*, .vs\*
+includePDB=true
