@@ -1,0 +1,15 @@
+﻿displayName=$displayname$
+author=$author$
+version=v$version$
+homepage=$homepage$
+dllReferences=$dllreferences$
+modReferences=$modreferences$
+weakReferences=$weakreferences$
+buildIgnore=$buildignore$
+languageVersion=$languageversion$
+side=$side$
+noCompile=$nocompile$
+hideCode=$hidecode$
+hideResources=$hideresources$
+includeSource=$includesource$
+includePDB=$includepdb$
