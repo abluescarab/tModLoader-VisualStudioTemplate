@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>tModLoader</Name>
+    <Description>Creates a basic mod class for tModLoader.</Description>
+    <Icon>tModLoaderTemplate.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>e9bbd9a0-7739-48b5-ac5b-9e0ca3ef36d9</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>tModLoader</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.cs" OpenInEditor="true">Class1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="build.txt">build.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="description.txt">description.txt</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>tModLoaderWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=d0f5abc00ed58bb5</Assembly>
+    <FullClassName>tModLoaderWizard.WizardImplementation</FullClassName>
+  </WizardExtension>
+</VSTemplate>

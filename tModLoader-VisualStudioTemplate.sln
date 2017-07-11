@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tModLoaderWizard", "tModLoaderWizard\tModLoaderWizard.csproj", "{5EE69D01-7FD8-4934-B6FC-60AD83323ACD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tModLoaderTemplate", "tModLoaderTemplate\tModLoaderTemplate.csproj", "{E22DE1A4-7F01-43D4-8A2C-0349900F5DD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EE69D01-7FD8-4934-B6FC-60AD83323ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE69D01-7FD8-4934-B6FC-60AD83323ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE69D01-7FD8-4934-B6FC-60AD83323ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE69D01-7FD8-4934-B6FC-60AD83323ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E22DE1A4-7F01-43D4-8A2C-0349900F5DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E22DE1A4-7F01-43D4-8A2C-0349900F5DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E22DE1A4-7F01-43D4-8A2C-0349900F5DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E22DE1A4-7F01-43D4-8A2C-0349900F5DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

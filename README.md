@@ -1,10 +1,12 @@
 # tModLoader Visual Studio Template
-This is a simple, customizable Visual Studio template for tModLoader projects.
+This is a simple, customizable Visual Studio template for tModLoader projects (now including a wizard!).
 
 Included:
-* References to the tModLoader executable and [ReLogic.dll](https://github.com/blushiemagic/tModLoader/blob/master/references/ReLogic.dll)
+* Wizard for easy mod creation
+* build.txt
+* description.txt
 * Basic mod file
-* Autofilled build.txt and blank description.txt
+* Post-build event to run tModLoaderServer
 
 ## Installation
-Just download the latest release and extract it into `Documents\Visual Studio <version>\Templates\ProjectTemplates`.
+Download and extract the latest release. There are two items: `tModLoaderWizard.vsix` and the `tModLoaderTemplate` folder. Double-click `tModLoaderWizard.vsix` and click "Install" when prompted. Then move the `tModLoaderTemplate` folder into `Documents\Visual Studio <version>\Templates\ProjectTemplates`.
