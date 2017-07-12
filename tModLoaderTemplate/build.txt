@@ -1,6 +1,6 @@
 ﻿displayName=$displayname$
 author=$author$
-version=v$version$
+version=$version$
 homepage=$homepage$
 dllReferences=$dllreferences$
 modReferences=$modreferences$
