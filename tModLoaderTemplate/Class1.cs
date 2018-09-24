@@ -11,7 +11,7 @@ using Terraria.ModLoader;
 namespace $safeprojectname$ {
     class $safeprojectname$ : Mod {
         public $safeprojectname$() {
-            Properties = new ModProperties() {
+            Properties = new ModProperties {
                 Autoload = true,
                 AutoloadGores = true,
                 AutoloadSounds = true
