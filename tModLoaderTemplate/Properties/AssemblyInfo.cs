@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("tModLoaderTemplate")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Alana Gilston")]
+[assembly: AssemblyCompany("abluescarab")]
 [assembly: AssemblyProduct("tModLoaderTemplate")]
-[assembly: AssemblyCopyright("Copyright © Alana Gilston 2017")]
+[assembly: AssemblyCopyright("Copyright © abluescarab 2017-2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
