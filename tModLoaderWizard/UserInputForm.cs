@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using EnvDTE;
+using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace tModLoaderWizard {
     public partial class UserInputForm : Form {
         public static List<Tuple<string, string>> parameters;
-        
+
         public UserInputForm() {
             InitializeComponent();
         }
@@ -28,7 +22,7 @@ namespace tModLoaderWizard {
             txtDisplayName.Text = safeProjectName;
             return ShowDialog();
         }
-        
+
         private void btnOK_Click(object sender, EventArgs e) {
             parameters.Add(new Tuple<string, string>("$displayname$", txtDisplayName.Text));
             parameters.Add(new Tuple<string, string>("$author$", txtAuthor.Text));
@@ -39,12 +33,13 @@ namespace tModLoaderWizard {
             parameters.Add(new Tuple<string, string>("$weakreferences$", txtWeakReferences.Text));
             parameters.Add(new Tuple<string, string>("$buildignore$", txtBuildIgnore.Text));
             parameters.Add(new Tuple<string, string>("$languageversion$", cmbLanguageVersion.GetItemText(cmbLanguageVersion.SelectedItem)));
+            parameters.Add(new Tuple<string, string>("$side$", cmbSide.GetItemText(cmbSide.SelectedItem)));
             parameters.Add(new Tuple<string, string>("$nocompile$", chkNoCompile.Checked.ToString().ToLower()));
             parameters.Add(new Tuple<string, string>("$hidecode$", (!chkIncludeSource.Checked).ToString().ToLower()));
             parameters.Add(new Tuple<string, string>("$hideresources$", chkHideResources.Checked.ToString().ToLower()));
             parameters.Add(new Tuple<string, string>("$includesource$", chkIncludeSource.Checked.ToString().ToLower()));
             parameters.Add(new Tuple<string, string>("$includepdb$", chkIncludePDB.Checked.ToString().ToLower()));
-            parameters.Add(new Tuple<string, string>("$side$", cmbSide.GetItemText(cmbSide.SelectedItem)));
+            parameters.Add(new Tuple<string, string>("$workingdirectory$", txtTerrariaDirectory.Text));
             parameters.Add(new Tuple<string, string>("$description$", txtDescription.Text));
 
             DialogResult = DialogResult.OK;
@@ -55,6 +50,21 @@ namespace tModLoaderWizard {
             parameters.Clear();
             DialogResult = DialogResult.Cancel;
             Close();
+        }
+
+        private void btnTerrariaBrowse_Click(object sender, EventArgs e) {
+            using(CommonOpenFileDialog dlg = new CommonOpenFileDialog {
+                InitialDirectory = txtTerrariaDirectory.Text,
+                DefaultDirectory = txtTerrariaDirectory.Text,
+                IsFolderPicker = true,
+                Multiselect = false,
+                Title = "Select Terraria directory",
+                RestoreDirectory = true
+            }) {
+                if(dlg.ShowDialog() == CommonFileDialogResult.Ok) {
+                    txtTerrariaDirectory.Text = dlg.FileName;
+                }
+            }
         }
     }
 }
